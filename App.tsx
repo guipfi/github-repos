@@ -1,7 +1,11 @@
+import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import useCachedResources from './src/hooks/useCachedResources';
 import Home from './src/screens/Home';
+import EStyleSheet from 'react-native-extended-stylesheet';
+
+EStyleSheet.build();
 
 export default function App() {
   const isLoadingComplete = useCachedResources();
@@ -12,8 +16,10 @@ export default function App() {
 
   return (
     <SafeAreaProvider>
-      <Home />
-      <StatusBar />
+      <SafeAreaView>
+        <StatusBar />
+        <Home />
+      </SafeAreaView>
     </SafeAreaProvider>
   );
 }

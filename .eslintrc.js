@@ -23,5 +23,6 @@ module.exports = {
     semi: ['error', 'always'],
     'prettier/prettier': 'error',
     'react/react-in-jsx-scope': 'off',
+    'react/prop-types': 'off',
   },
 };

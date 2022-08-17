@@ -1,4 +1,4 @@
-import { ListRepos } from 'feature/ListRepos';
+import { ListRepos } from 'features/ListRepos';
 
 const Home: React.FC = () => <ListRepos />;
 
