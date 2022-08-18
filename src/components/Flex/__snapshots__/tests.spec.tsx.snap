@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`flex tests should render a column based flex container 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+      },
+      undefined,
+    ]
+  }
+>
+  <Text>
+    First line
+  </Text>
+  <Text>
+    Second line
+  </Text>
+</View>
+`;
+
+exports[`flex tests should render a row based flex container 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+      },
+      Object {
+        "flexDirection": "row",
+      },
+    ]
+  }
+>
+  <Text>
+    First column
+  </Text>
+  <Text>
+    Second column
+  </Text>
+</View>
+`;

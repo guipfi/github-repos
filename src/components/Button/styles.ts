@@ -6,10 +6,11 @@ const styles = EStyleSheet.create({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    width: '70%',
     height: '3rem',
     borderRadius: 360,
     backgroundColor: theme.colors.purple,
+    width: '10rem',
+    maxWidth: '80%',
   },
   btnText: {
     fontWeight: 'bold',

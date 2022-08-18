@@ -2,13 +2,23 @@ import EStyleSheet from 'react-native-extended-stylesheet';
 
 const styles = EStyleSheet.create({
   container: {
+    display: 'flex',
+    alignItems: 'center',
     padding: '.5rem',
   },
-  centeredItem: {
+  searchBar: {
     marginTop: '1.5rem',
     marginBottom: '1.5rem',
-    marginLeft: 'auto',
-    marginRight: 'auto',
+  },
+  textCenter: {
+    textAlign: 'center',
+  },
+  list: {
+    width: '100%',
+  },
+  btn: {
+    marginTop: '1rem',
+    marginBottom: '2rem',
   },
 });
 

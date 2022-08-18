@@ -22,7 +22,7 @@ const styles = EStyleSheet.create({
   },
   description: {
     fontWeight: '500',
-    marginBottom: '.375rem',
+    marginBottom: '1rem',
   },
   star: {
     flexDirection: 'row',

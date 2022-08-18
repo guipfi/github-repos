@@ -4,14 +4,14 @@ import {
   TextInputProps,
   View,
   ViewProps,
-  TouchableHighlight,
-  TouchableHighlightProps,
+  TouchableOpacity,
+  TouchableOpacityProps,
 } from 'react-native';
 
 import styles from './styles';
 
 interface SearchFieldProps extends ViewProps {
-  buttonProps?: TouchableHighlightProps;
+  buttonProps?: TouchableOpacityProps;
   inputProps?: TextInputProps;
 }
 
@@ -21,11 +21,11 @@ const SearchField: React.FC<SearchFieldProps> = ({ buttonProps, inputProps, ...r
   return (
     <View style={[containerStyle, styles.container]} {...containerProps}>
       <TextInput {...inputProps} style={styles.field} />
-      <TouchableHighlight {...buttonProps}>
+      <TouchableOpacity {...buttonProps}>
         <View style={styles.button}>
           <FontAwesome style={styles.searchIcon} name={'search'} />
         </View>
-      </TouchableHighlight>
+      </TouchableOpacity>
     </View>
   );
 };

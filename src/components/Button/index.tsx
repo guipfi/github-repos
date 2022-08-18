@@ -1,7 +1,7 @@
 import {
   View,
-  TouchableHighlight,
-  TouchableHighlightProps,
+  TouchableOpacity,
+  TouchableOpacityProps,
   Text,
   ActivityIndicator,
 } from 'react-native';
@@ -9,11 +9,11 @@ import theme from 'utils/theme';
 
 import styles from './styles';
 
-interface ButtonProps extends TouchableHighlightProps {
+interface ButtonProps extends TouchableOpacityProps {
   isLoading?: boolean;
 }
 
-const Button: React.FC<ButtonProps> = (props) => {
+export const Button: React.FC<ButtonProps> = (props) => {
   const { isLoading, children, style, ...rest } = props;
 
   const renderChildren = () => {
@@ -28,10 +28,8 @@ const Button: React.FC<ButtonProps> = (props) => {
   };
 
   return (
-    <TouchableHighlight {...rest}>
+    <TouchableOpacity {...rest}>
       <View style={[styles.button, style]}>{renderChildren()}</View>
-    </TouchableHighlight>
+    </TouchableOpacity>
   );
 };
-
-export { Button };
